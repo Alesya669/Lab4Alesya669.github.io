@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки задание 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="bg-danger">
+    <div class="container">
+        <div class="header-top py-3">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="ca mb-3 mb-md-0">
+                    <img src="../site2/zadanie4/ca.jpg" alt="Молния маквин воюет с девяткой" class="img-fluid rounded" style="max-width: 180px;">
+                </div>
+                <nav class="main-nav d-flex flex-column flex-md-row gap-2 gap-md-4">
+                    <a href="http://kubsu.ru" class="text-white text-decoration-none font-weight-bold py-1">Главная</a>
+                    <a href="https://kubsu.ru/university" class="text-white text-decoration-none font-weight-bold py-1">Об университете</a>
+                    <a href="https://kubsu.ru/ru/university/departments" class="text-white text-decoration-none font-weight-bold py-1">Факультеты</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container container mt-4">
+    <div class="content-wrapper row">
+
+        <section class="links-section col-12 order-2 order-md-1 mb-4">
+
+            <ol class="list-group">
+                <li class="list-group-item mb-2">
+                    Абсолютная гиперссылка на главную страницу сайта kubsu.ru
+                    <a href="http://kubsu.ru" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Абсолютная на главную сайта kubsu.ru в протоколе https
+                    <a href="https://kubsu.ru" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    <p class="mb-1">Ссылка-изображение</p>
+                    <a href="https://kubsu.ru">
+                        <img src="../site2/zadanie4/ca.jpg" alt="error" class="img-fluid rounded" style="max-width: 150px;">
+                    </a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Сокращенная ссылка на внутреннюю страницу
+                    <a href="/index.html" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Сокращенная ссылка на главную страницу
+                    <a href="/" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    <a href="#form" class="text-danger">Ссылка на фрагмент текущей страницы (форма)</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка с тремя параметрами в URL
+                    <a href="https://kubsu.ru/?faculty=rgf&area=op&group=13" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка с параметром id в URL
+                    <a href="https://kubsu.ru/?id=660" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Относительная ссылка в текущем каталоге
+                    <a href="./" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Относительная ссылка в каталоге about
+                    <a href="/about" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Относительная ссылка на уровень выше
+                    <a href="../" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Относительная ссылка на два уровня выше
+                    <a href="../../" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Контекстная ссылка в тексте
+                    Текст с <a href="#form" class="text-danger">контекстной ссылкой</a> внутри.
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка на фрагмент стороннего сайта
+                    <a href="https://www.iana.org/help/example-domains#legalnotice" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    <p class="mb-1">Ссылка из областей картинки</p>
+                    <img src="../site2/zadanie4/car.jpg" alt="Картинка с разными областями" usemap="#car" class="img-fluid" style="max-width: 300px;">
+                    <map name="car">
+                        <area shape="rect" coords="0,0,150,300" href="https://kubsu.ru/" alt="rect">
+                        <area shape="circle" coords="150,150,150" href="https://kubsu.ru/education" alt="circle">
+                    </map>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка с пустым href
+                    <a href="" class="text-danger ml-2">Cсылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка без href
+                    <a class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка с запретом перехода для поисковиков
+                    <a href="https://kubsu.ru/no-follow" rel="nofollow" class="text-danger ml-2">Ссылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка с запретом индексации
+                    <a href="https://kubsu.ru/no-index" rel="noindex" class="text-danger ml-2">Cсылка</a>
+                </li>
+                <li class="list-group-item mb-2">
+                    <p class="mb-1">Нумерованный список с title</p>
+                    <ol class="mt-2">
+                        <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ" class="text-danger">Кубанский государственный университет</a></li>
+                        <li><a href="https://kubsu.ru/university" title="Информация об университете" class="text-danger">Об университете</a></li>
+                        <li><a href="https://kubsu.ru/education" title="Образовательные программы" class="text-danger">Образование</a></li>
+                    </ol>
+                </li>
+                <li class="list-group-item mb-2">
+                    Ссылка на FTP с авторизацией
+                    <a href="ftp://student6:969@kubsu.ru/" class="text-danger ml-2">FTP файл</a>
+                </li>
+            </ol>
+        </section>
+
+        <section id="table-section" class="table-section col-12 order-1 order-md-2 mb-4">
+            <h2 class="text-danger mb-3">Таблица факультетов</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th>Факультет</th>
+                        <th>Декан</th>
+                        <th>Количество студентов</th>
+                        <th>Аудитории</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Математики и компьютерных наук</td>
+                        <td>Иванова А.И.</td>
+                        <td>1200</td>
+                        <td>101-210</td>
+                    </tr>
+                    <tr>
+                        <td>Филологический</td>
+                        <td>Петров М.С.</td>
+                        <td>1100</td>
+                        <td>301-415</td>
+                    </tr>
+                    <tr>
+                        <td>Исторический</td>
+                        <td>Сидоров В.П.</td>
+                        <td>800</td>
+                        <td>501-510</td>
+                    </tr>
+                    <tr>
+                        <td>Экономический</td>
+                        <td>Иванов Е.В.</td>
+                        <td>800</td>
+                        <td>201-250</td>
+                    </tr>
+                    <tr>
+                        <td>Юридический</td>
+                        <td>Сергеев Д.К.</td>
+                        <td>150</td>
+                        <td rowspan="2">40-43</td>
+                    </tr>
+                    <tr>
+                        <td>Тачки 2</td>
+                        <td>Молния М.К.</td>
+                        <td>1562</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <section id="form" class="mt-5">
+        <h2 class="text-danger mb-3">Форма обратной связи</h2>
+        <form action="/" method="post" class="bg-light p-4 rounded">
+            <div class="form-group">
+                <label class="font-weight-bold">ФИО:</label>
+                <input type="text" name="name" class="form-control" placeholder="Руденко Алеся Алексеевна" required>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Телефон:</label>
+                <input type="tel" name="tel" class="form-control" placeholder="+7 (918) 253-50-15" required>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Email:</label>
+                <input type="email" name="email" class="form-control" placeholder="rudenko.alesya2006@mail.ru" required>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">День рождения:</label>
+                <input type="date" name="birthday" class="form-control" value="2006-08-27" required>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Пол:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" checked name="sex" value="Мужской">
+                    <label class="form-check-label">Мужской</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" value="Женский">
+                    <label class="form-check-label">Женский</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Любимые языки программирования:</label>
+                <select name="lang" class="form-control" multiple="multiple" size="6" required>
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="Cpp" selected>C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python" selected>Python</option>
+                    <option value="Java" selected>Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select>
+                <small class="form-text text-muted">Для выбора нескольких вариантов используйте Ctrl+Click</small>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Биография:</label>
+                <textarea class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="check-1" required>
+                    <label class="form-check-label">С контрактом ознакомлен(а)</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg mt-3">Сохранить</button>
+        </form>
+    </section>
+</div>
+
+<footer id="site-footer" class="bg-danger text-white text-center py-4 mt-5">
+    <div class="container">
+        <p class="mb-0 d-flex align-items-center justify-content-center">
+            <img src="../site2/zadanie4/ca.jpg" alt="error" class="img-fluid rounded mr-3" style="max-width: 150px;">
+            2025 Руденко Алеся. Кубанский Государственный Университет
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
