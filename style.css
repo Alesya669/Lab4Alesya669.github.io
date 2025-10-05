@@ -5,7 +5,9 @@ body {
     background-color: #f8f9fa;
 }
 
-
+.ca img {
+    border-radius: 8px;
+}
 .main-nav a {
     transition: all 0.3s ease;
     border-radius: 5px;
